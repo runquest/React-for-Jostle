@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/runquest/jrproject/issues"
   },
-  "homepage": "https://github.com/runquest/jrproject#readme"
+  "homepage": "https://github.com/runquest/jrproject#readme",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
 }
