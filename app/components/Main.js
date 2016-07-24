@@ -12,7 +12,7 @@ var Main = React.createClass({
         {this.props.children}
         <div style={footer}>
             <button style={button}>
-              <Link to='/'>Video | Home</Link>
+              <Link to='/'>Home</Link>
             </button>
             <button style={button}>
               <Link to='/list'>List</Link>
