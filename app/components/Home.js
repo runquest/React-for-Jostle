@@ -1,5 +1,6 @@
 var React = require('react');
 var pageTitle = require('../styles').pageTitle
+var center = require('../styles').center
 var jquery = require('jquery');
 var ReactPlayer = require('react-player');
 
@@ -31,9 +32,15 @@ var Home = React.createClass({
   render: function () {
     return (
       <div data={this.state.data}>
-        <h1 style={pageTitle}>{this.state.data.title}</h1>
-        <p>{this.state.data.body}</p>
-        <VideoFrame></VideoFrame>
+        <h1 styleName='text-center' style={pageTitle}>{this.state.data.title}</h1>
+        <p styleName='text-center' >{this.state.data.body}</p>
+        <div className='row'>
+          <div style={center}>
+            <div class="col-xs-12 col-sm-4">
+              <VideoFrame></VideoFrame>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

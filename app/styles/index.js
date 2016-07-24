@@ -20,6 +20,10 @@ var styles = {
     margin: 'auto 0',
     display: 'flex'
   },
+  center: {
+    margin: '0 auto',
+    width: '80%'
+  },
   button: {
     backgroundColor: '#4ba8dc',
     width: '100px',
