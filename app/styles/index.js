@@ -1,11 +1,4 @@
 var styles = {
-
-  transparentBg: {
-    background: 'transparent'
-  },
-  mainContainerBg: {
-    background: '#f2f2f2'
-  },
   indexBg: {
     background: 'light-grey',
     height: '100%'
@@ -32,13 +25,39 @@ var styles = {
     display: 'block',
     margin: 'auto',
     width: '40%',
+    paddingTo: '15px', 
     color: 'white'
   },
   pageTitle: {
-    marginLeft: '50px',
     marginTop: '50px',
     marginBottom: '30px'
+  },
+
+  Btn: {
+    border: '0',
+    backgroundColor: '#4ba8dc',
+    textDecoration: 'none',
+    color: '#fff',
+    padding: '8px 16px',
+    borderRadius: '4px',
+    transition: 'background-color 500ms',
+    whiteSpace: 'nowrap',
+    display: 'inline-block',
+    lineHeight: '1.5',
+    fontSize: '14px',
+    fontWeight: '400'
+  },
+
+  Input: {
+    fontSize: '14px',
+    padding: '8px 16px',
+    margin: '10px',
+    borderRadius: '4px',
+    border: '1px solid #ccc',
+    boxSizing: 'border-box',
+    transition: 'border-color 500ms, box-shadow 500ms'
   }
+
 };
 
 module.exports = styles;

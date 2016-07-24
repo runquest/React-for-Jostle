@@ -1,33 +1,55 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
+var List = require('react-dynamic-list');
 var pageTitle = require('../styles').pageTitle
 
-var ListItem = React.createClass({
+var LIST_DATA = {
+  items: [{title: 'First title', imageUrl: 'http://goo.gl/WBmFsz'}, {title: 'Second title', imageUrl: 'http://goo.gl/WBmFsz'}, {title: 'Third title', imageUrl: 'http://goo.gl/WBmFsz'}]
+}
 
+var Image = React.createClass({
   render: function () {
-    var names = ['Jake', 'Jon', 'Thruster'];
-    var namesList = names.map(function(name, index){
+    return <img src='http://facebook.github.io/react/img/logo_og.png'></img>
+  }
+});
 
-      return <li key={ index }>{name}</li>;
-    })
-    return  <ul>{ namesList }</ul>
+var Content = React.createClass({
+  render: function (){
+    return <div>hello</div>
+  }
+});
+
+var ListItem = React.createClass({
+  render: function() {
+    console.log(this);
+    return <li><div>
+         <h1> {this.props.data.title} </h1>
+         <Image />
+         <Content />
+       </div></li>;
+  }
+});
+
+var ListItems = React.createClass({
+  render: function() {
+    return (
+      <ul>
+        {this.props.list.items.map(function(result) {
+           return <ListItem key={result.id} data={result}/>;
+        })}
+      </ul>
+    );
   }
 });
 
 var List = React.createClass({
-
-  render: function () {
+  render: function() {
     return (
-      <div>
-        <h1 style={pageTitle}>List</h1>
-        <ListItem></ListItem>
-      </div>
+      <ListItems list={LIST_DATA} />
     );
   }
 });
 
 
-
-
-
-
 module.exports = List;
+
