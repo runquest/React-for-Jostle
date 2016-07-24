@@ -1,6 +1,15 @@
 var React = require('react');
 var pageTitle = require('../styles').pageTitle
 var jquery = require('jquery');
+var Video = require('react-html5video');
+var ReactPlayer = require('react-player');
+var url = "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4"
+
+var VideoFrame = React.createClass({
+  render () {
+    return <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' playing />
+  }
+});
 
 var Home = React.createClass({
   componentDidMount: function() {
@@ -20,8 +29,11 @@ var Home = React.createClass({
 
   render: function () {
     return (
-      <h1 style={pageTitle}>home</h1>
-    )
+      <div>
+        <h1 style={pageTitle}>home</h1>
+        <VideoFrame></VideoFrame>
+      </div>
+    );
   }
 });
 
