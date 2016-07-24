@@ -1,16 +1,15 @@
 var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link
-var transparentBg = require('../styles').transparentBg;
+var indexBg = require('../styles').indexBg;
+var footer = require('../styles').footer;
+var button = require('../styles').button;
 
 function Home () {
   return (
-    <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
+    <div className="jumbotron col-sm-12 center" style={indexBg}>
       <h1>Github Battle</h1>
       <p className='lead'>What even is a jQuery?</p>
-      <Link to='/playerOne'>
-        <button type='button' className='btn btn-lg btn-success'>Get Started</button>
-      </Link>
     </div>
   )
 }
