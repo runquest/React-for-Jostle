@@ -1,28 +1,26 @@
 var React = require('react');
-var ReactRouter = require('react-router');
-var Link = ReactRouter.Link
-var mainContainerBg = require('../styles').mainContainerBg;
 var footer = require('../styles').footer;
 var button = require('../styles').button;
-var menu = require('../styles').menu;
+var container = require('../styles').container;
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link
 
 var Main = React.createClass({
   render: function () {
     return (
-      <div className='main-container center' style={mainContainerBg}>
+      <div className='main-container' style={container}>
         {this.props.children}
-
-        <div id="footer" style={footer}>
-          <Link to='/'>
-            <button type='button' className='btn btn-lg btn-success'>Video</button>
-          </Link>
-          <Link to='/list'>
-            <button className='btn btn-lg btn-success'>List</button>
-          </Link>
-          <Link to='form'>
-            <button className='btn btn-lg btn-success'>Form</button>
-          </Link>
-      </div>
+        <div style={footer}>
+            <button style={button}>
+              <Link to='/'>Video | Home</Link>
+            </button>
+            <button style={button}>
+              <Link to='/list'>List</Link>
+            </button>
+            <button style={button}>
+              <Link to='/form'>Form</Link>
+            </button>
+        </div>
       </div>
     )
   }

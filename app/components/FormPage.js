@@ -1,12 +1,12 @@
 var React = require('react');
 var pageTitle = require('../styles').pageTitle
 
-var List = React.createClass({
+var FormPage = React.createClass({
   render: function () {
     return (
-      <h1 style={pageTitle}>list</h1>
+      <h1 style={pageTitle}>form</h1>
     )
   }
 });
 
-module.exports = List;
+module.exports = FormPage;
