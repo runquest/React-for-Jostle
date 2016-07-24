@@ -2,6 +2,9 @@
   "name": "jostleproject",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "5.9.1"
+  },
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -16,8 +19,15 @@
   "bugs": {
     "url": "https://github.com/runquest/jrproject/issues"
   },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "homepage": "https://github.com/runquest/jrproject#readme",
   "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3",
     "axios": "^0.13.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
@@ -27,6 +37,7 @@
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
+    "gh-pages": "^0.11.0",
     "style-loader": "^0.13.1"
   }
 }
