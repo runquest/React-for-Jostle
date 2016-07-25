@@ -20,9 +20,9 @@ var Main = React.createClass({
             {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
         </ReactCSSTransitionGroup>
           <div className='row'>
-            <RadiumLink to='/' className="col s12 m4"><p>Home</p></RadiumLink>
-            <RadiumLink to='/list' className="col s12 m4"><p>List</p></RadiumLink>
-            <RadiumLink to='/form' className="col s12 m4"><p>Form</p></RadiumLink>
+            <Link to='/home' className="col s12 m4 hoverable" activeClassName="active"><p>Home</p></Link>
+            <Link to='/list' className="col s12 m4 hoverable" activeClassName="active"><p>List</p></Link>
+            <Link to='/form' className="col s12 m4 hoverable" activeClassName="active"><p>Form</p></Link>
           </div>
       </div>
     )

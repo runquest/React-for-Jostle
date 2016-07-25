@@ -70,11 +70,6 @@ div#menu-footer {
 .menu-btn {
 background-color: #4ba8dc;
 
-  /*  display: block;
-  margin: auto;
-  padding: 15px;
-  color: white;*/
-
   height: 50px;
   text-align: center;
   display:inline-block;;
@@ -83,4 +78,9 @@ background-color: #4ba8dc;
 .form-card {
   padding: 15px; 
   margin: 25px;
+}
+
+.active {
+  background-color: #4ba8dc;
+  color: white;
 }
