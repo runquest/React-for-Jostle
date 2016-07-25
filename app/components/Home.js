@@ -37,7 +37,7 @@ var Home = React.createClass({
       <div data={this.state.data} className="row">
         <h1 className="col s12">{this.state.data.title}</h1>
         <p className="col s12">{this.state.data.body}</p>
-        <ReactPlayer className="col s12" width="100%" url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4'/>
+        <ReactPlayer className="col s12" width="100%" url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' playing />
       </div>
     );
   }

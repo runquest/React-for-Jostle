@@ -1,7 +1,7 @@
 var React = require('react');
 require('../main.css');
 
-var FormPage = React.createClass({
+var Form = React.createClass({
   getInitialState: function() {
     //we are only saving the emailAddress as an example
     //of how to save data changes for final submission
@@ -175,4 +175,4 @@ var InputError = React.createClass({
  
 });
 
-module.exports = FormPage;
+module.exports = Form;

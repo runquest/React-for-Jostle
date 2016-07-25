@@ -7,7 +7,7 @@ var IndexRoute = ReactRouter.IndexRoute;
 var Main = require('../components/Main');
 var Home = require("../components/Home");
 var List = require("../components/List");
-var FormPage = require("../components/FormPage");
+var Form = require("../components/Form");
 
 var routes = (
   <Router history={hashHistory}>
@@ -15,7 +15,7 @@ var routes = (
       <IndexRoute component={Home} />
       <Route path='home' component={Home} />
       <Route path='list' component={List} />
-      <Route path='form' component={FormPage} />
+      <Route path='form' component={Form} />
     </Route>
   </Router>
 );
