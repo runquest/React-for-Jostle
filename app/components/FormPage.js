@@ -46,7 +46,7 @@ var FormPage = React.createClass({
       <div>
         <h1>Form</h1>
         <ul><li>Field cannot be empty (required).</li><li>Field has to be at least 6 characters long.</li><li>Email validation through regex.</li></ul>
-        <form onSubmit={this.handleSubmit}>
+        <form id='formComponent' onSubmit={this.handleSubmit}>
         
           <TextInput
             uniqueName="email"
@@ -57,7 +57,7 @@ var FormPage = React.createClass({
             onChange={this.handleEmailInput} 
             errorMessage="Email is invalid"
             emptyMessage="Email is required"
-            style={InputForm}
+            class='emailTextEmail'
               />
      
           <input type="submit" style={Btn} value="Submit" />

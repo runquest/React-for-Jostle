@@ -29,9 +29,17 @@ div#listComponent {
     padding: 15px;
     margin: 24px;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 .menu:hover {
   background-color: red;
+}
+
+form#formComponent {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 24px;
+    text-align: center;
+    width: 100%;
 }

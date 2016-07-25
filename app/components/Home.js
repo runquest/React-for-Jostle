@@ -16,12 +16,6 @@ var jquery = require('jquery');
 *
 */
 
-var VideoFrame = React.createClass({
-  render () {
-    return <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' playing/>
-  }
-});
-
 var Home = React.createClass({
   getInitialState: function() {
     return {data: []};
@@ -46,7 +40,7 @@ var Home = React.createClass({
       <div data={this.state.data}>
         <h1 className='text-center' style={pageTitle}>{this.state.data.title}</h1>
         <p className='text-center' >{this.state.data.body}</p>
-        <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' playing width='731.22'/>
+        <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' width='731.22'/>
       </div>
     );
   }

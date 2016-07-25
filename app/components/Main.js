@@ -25,10 +25,10 @@ var Main = React.createClass({
             {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
         </ReactCSSTransitionGroup>
         <div className='row'>
-          <div style={footer} className='valign-wrapper'>
-              <RadiumLink to='/' style={button} className='valign menu'>Home</RadiumLink>
-              <RadiumLink to='/list' style={button} className='valign'>List</RadiumLink>
-              <RadiumLink to='/form' style={button} className='valign'>Form</RadiumLink>
+          <div style={footer} className='row'>
+              <RadiumLink to='/' style={button} className='four column'>Home</RadiumLink>
+              <RadiumLink to='/list' style={button} className='four column'>List</RadiumLink>
+              <RadiumLink to='/form' style={button} className='four column'>Form</RadiumLink>
           </div>
         </div>
       </div>
