@@ -19,7 +19,7 @@ var Main = React.createClass({
           transitionLeaveTimeout={1500}>
             {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
         </ReactCSSTransitionGroup>
-          <div className='row'>
+          <div className='row' id="menu-footer">
             <Link to='/home' className="col s12 m4 hoverable" activeClassName="active"><p>Home</p></Link>
             <Link to='/list' className="col s12 m4 hoverable" activeClassName="active"><p>List</p></Link>
             <Link to='/form' className="col s12 m4 hoverable" activeClassName="active"><p>Form</p></Link>
