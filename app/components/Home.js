@@ -44,8 +44,8 @@ var Home = React.createClass({
   render: function () {
     return (
       <div data={this.state.data}>
-        <h1 styleName='text-center' style={pageTitle}>{this.state.data.title}</h1>
-        <p styleName='text-center' >{this.state.data.body}</p>
+        <h1 className='text-center' style={pageTitle}>{this.state.data.title}</h1>
+        <p className='text-center' >{this.state.data.body}</p>
         <VideoFrame></VideoFrame>
       </div>
     );

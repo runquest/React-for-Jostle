@@ -17,18 +17,12 @@ require('../main.css');
 var Main = React.createClass({
   render: function () {
     return (
-      <div className='container' className='center-align' style={container}>
+      <div className='container center-align' style={container}>
         <ReactCSSTransitionGroup
           transitionName='appear'
           transitionEnterTimeout={1500}
           transitionLeaveTimeout={1500}>
-          <div className='row' style={page}>
-            <div style={center}>
-              <div class="col s12 m12 l12">
-                {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
-              </div>
-            </div>
-          </div>
+            {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
         </ReactCSSTransitionGroup>
         <div className='row'>
           <div style={footer} className='valign-wrapper'>
