@@ -22,7 +22,7 @@ var Main = React.createClass({
           <div className='row'>
             <RadiumLink to='/' className="col s12 m4"><p>Home</p></RadiumLink>
             <RadiumLink to='/list' className="col s12 m4"><p>List</p></RadiumLink>
-            <RadiumLink to='/form' className="col s12 m4"><p>form</p></RadiumLink>
+            <RadiumLink to='/form' className="col s12 m4"><p>Form</p></RadiumLink>
           </div>
       </div>
     )

@@ -1,14 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var List = require('react-dynamic-list');
-var Modal = require('react-modal');
 var jquery = require('jquery');
 require('../main.css');
 
 var Image = React.createClass({
   render: function () {
     var msg = this.props.url.title;
-    return <img src={this.props.url.url} onClick={()=>{this.popup(msg)}} className='listImage'></img>
+    return <img className="col s12" src={this.props.url.url} onClick={()=>{this.popup(msg)}}></img>
   },
   popup: function(e) {
        alert(e);
@@ -17,17 +16,17 @@ var Image = React.createClass({
 
 var Content = React.createClass({
   render: function (){
-    return <div>{this.props.content}</div>
+    return <div className="col s12">{this.props.content}</div>
   }
 });
 
 var ListItem = React.createClass({
   render: function() {
 
-    return <li><div id='listComponent'>
+    return <li className="row">
          <Image url={this.props.data} />
          <Content content={this.props.data.title} />
-       </div></li>;
+       </li>;
   }
 });
 
@@ -66,9 +65,9 @@ var List = React.createClass({
   render: function () {
     return (
       <div>
-         <h1>List</h1>
-         <ListItems list={this.state.data}/>
-       </div>
+        <h1>List</h1>
+        <ListItems list={this.state.data}/>
+      </div>
     );
   }
 });

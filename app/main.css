@@ -45,7 +45,8 @@ form.formComponent {
   background-color: #4ba8dc;
   text-decoration: none;
   color: #fff;
-  padding: 8px 16px;
+  padding: 16px 16px;
+  margin-top: 15px;
   border-radius: 4px;
   transition: background-color 500ms;
   white-space: nowrap;
@@ -77,4 +78,9 @@ background-color: #4ba8dc;
   height: 50px;
   text-align: center;
   display:inline-block;;
+}
+
+.form-card {
+  padding: 15px; 
+  margin: 25px;
 }

@@ -40,25 +40,25 @@ var FormPage = React.createClass({
   render: function() {
     //Each form field is actually another component.
     return (
-      <div>
+      <div class='row'>
         <h1>Form</h1>
         <ul><li>Field cannot be empty (required).</li><li>Field has to be at least 6 characters long.</li><li>Email validation through regex.</li></ul>
-        <form className='formComponent' onSubmit={this.handleSubmit}>
-        
-          <TextInput
-            uniqueName="email"
-            text="Aiste"
-            required={true}
-            minCharacters={6}
-            validate={this.validateEmail}
-            onChange={this.handleEmailInput} 
-            errorMessage="Email is invalid"
-            emptyMessage="Email is required"
-            class='emailTextEmail'
-              />
-     
-          <input type="submit" className='j-button' value="Submit" />
-        </form>
+          <form className='card row form-card' onSubmit={this.handleSubmit}>
+          
+            <TextInput
+              uniqueName="email"
+              text="Aiste"
+              required={true}
+              minCharacters={6}
+              validate={this.validateEmail}
+              onChange={this.handleEmailInput} 
+              errorMessage="Email is invalid"
+              emptyMessage="Email is required"
+              class='emailTextEmail'
+                />
+       
+            <input type="submit" className='btn col s12 j-button' value="Submit" />
+          </form>
       </div>
     );
   }

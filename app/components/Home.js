@@ -4,8 +4,6 @@ var ReactPlayer = require('react-player');
 var jquery = require('jquery');
 require('../main.css');
 
-
-
 /*
 * Video props:
 * url, playing, loop, controls, volume, width, height, className(pass in a className to set on the top level element), progressFrequency.
@@ -36,10 +34,10 @@ var Home = React.createClass({
 
   render: function () {
     return (
-      <div data={this.state.data}>
-        <h1 className='text-center'>{this.state.data.title}</h1>
-        <p className='text-center'>{this.state.data.body}</p>
-        <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4'/>
+      <div data={this.state.data} className="row">
+        <h1 className="col s12">{this.state.data.title}</h1>
+        <p className="col s12">{this.state.data.body}</p>
+        <ReactPlayer className="col s12" width="100%" url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4'/>
       </div>
     );
   }
