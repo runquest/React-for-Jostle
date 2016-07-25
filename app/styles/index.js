@@ -59,6 +59,15 @@ var styles = {
     border: '1px solid #ccc',
     boxSizing: 'border-box',
     transition: 'border-color 500ms, box-shadow 500ms'
+  },
+
+  customStyle: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
   }
 
 };
