@@ -12,3 +12,26 @@
 .appear-leave {
   opacity: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+.listImage {
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+div#listComponent {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    margin: 24px;
+    text-align: center;
+    width: 80%;
+}
+
+.menu:hover {
+  background-color: red;
+}

@@ -6,6 +6,7 @@ var footer = require('../styles').footer;
 var button = require('../styles').button;
 var container = require('../styles').container;
 var center = require('../styles').center;
+var page = require('../styles').page
 
 var Link = ReactRouter.Link
 var Radium = require('radium');
@@ -21,7 +22,7 @@ var Main = React.createClass({
           transitionName='appear'
           transitionEnterTimeout={1500}
           transitionLeaveTimeout={1500}>
-          <div className='row'>
+          <div className='row' style={page}>
             <div style={center}>
               <div class="col s12 m12 l12">
                 {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
@@ -31,9 +32,9 @@ var Main = React.createClass({
         </ReactCSSTransitionGroup>
         <div className='row'>
           <div style={footer} className='valign-wrapper'>
-            <RadiumLink to='/' style={button} className='valign'>Home</RadiumLink>
-            <RadiumLink to='/list' style={button} className='valign'>List</RadiumLink>
-            <RadiumLink to='/form' style={button} className='valign'>Form</RadiumLink>
+              <RadiumLink to='/' style={button} className='valign menu'>Home</RadiumLink>
+              <RadiumLink to='/list' style={button} className='valign'>List</RadiumLink>
+              <RadiumLink to='/form' style={button} className='valign'>Form</RadiumLink>
           </div>
         </div>
       </div>

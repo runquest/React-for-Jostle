@@ -6,9 +6,19 @@ var center = require('../styles').center
 var videoPlayer = require('../styles').videoPlayer
 var jquery = require('jquery');
 
+
+/*
+* Video props:
+* url, playing, loop, controls, volume, width, height, className(pass in a className to set on the top level element), progressFrequency.
+*
+* Callback props:
+* onProgress, onDuration, onStart, onPlay, onPause, onBuffer, onEnded, onError
+*
+*/
+
 var VideoFrame = React.createClass({
   render () {
-    return <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' controls className='videoPlayer'/>
+    return <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' playing/>
   }
 });
 

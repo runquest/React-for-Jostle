@@ -1,16 +1,35 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var List = require('react-dynamic-list');
+var Modal = require('react-modal');
 var pageTitle = require('../styles').pageTitle
+var page = require('../styles').page
+var listImage = require('../styles').listImage
 var jquery = require('jquery');
-
-var LIST_DATA = {
-  items: [{title: 'First title', imageUrl: 'http://goo.gl/WBmFsz'}, {title: 'Second title', imageUrl: 'http://goo.gl/WBmFsz'}, {title: 'Third title', imageUrl: 'http://goo.gl/WBmFsz'}]
-}
 
 var Image = React.createClass({
   render: function () {
-    return <img src={this.props.url}></img>
+    return <img src={this.props.url} onClick={this.popup} className='listImage'></img>
+  },
+  popup(){
+    console.log('yo')
+    return 
+      <div>
+        <Modal>
+          <h2 ref="subtitle">Hello</h2>
+          <button onClick={this.closeModal}>close</button>
+          <div>I am a modal</div>
+          <form>
+            <input />
+            <button>tab navigation</button>
+            <button>stays</button>
+            <button>inside</button>
+            <button>the modal</button>
+          </form>
+        </Modal>
+      </div>
+  
+  
   }
 });
 
@@ -23,7 +42,7 @@ var Content = React.createClass({
 var ListItem = React.createClass({
   render: function() {
 
-    return <li><div>
+    return <li><div id='listComponent'>
          <Image url={this.props.data.thumbnailUrl} />
          <Content content={this.props.data.title} />
        </div></li>;
@@ -66,14 +85,11 @@ var List = React.createClass({
     return (
       <div>
          <h1>List</h1>
-         <ListItems list={this.state.data} />
+         <ListItems list={this.state.data}/>
        </div>
     );
   }
 });
-
-
-
 
 module.exports = List;
 

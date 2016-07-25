@@ -3,6 +3,9 @@ var styles = {
     background: 'light-grey',
     height: '100%'
   },
+  page: {
+    paddingBottom: '160px'
+  },
   footer: {
     position: 'fixed',
     left: '0px',
