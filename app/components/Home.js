@@ -1,10 +1,9 @@
 var React = require('react');
 var ReactPlayer = require('react-player');
 
-var pageTitle = require('../styles').pageTitle
-var center = require('../styles').center
-var videoPlayer = require('../styles').videoPlayer
 var jquery = require('jquery');
+require('../main.css');
+
 
 
 /*
@@ -38,9 +37,9 @@ var Home = React.createClass({
   render: function () {
     return (
       <div data={this.state.data}>
-        <h1 className='text-center' style={pageTitle}>{this.state.data.title}</h1>
-        <p className='text-center' >{this.state.data.body}</p>
-        <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' width='731.22'/>
+        <h1 className='text-center'>{this.state.data.title}</h1>
+        <p className='text-center'>{this.state.data.body}</p>
+        <ReactPlayer url='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4'/>
       </div>
     );
   }

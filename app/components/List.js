@@ -2,9 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var List = require('react-dynamic-list');
 var Modal = require('react-modal');
-var pageTitle = require('../styles').pageTitle
-var listImage = require('../styles').listImage
 var jquery = require('jquery');
+require('../main.css');
 
 var Image = React.createClass({
   render: function () {

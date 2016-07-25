@@ -2,11 +2,6 @@ var React = require('react');
 var ReactRouter = require('react-router');
 
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-var footer = require('../styles').footer;
-var button = require('../styles').button;
-var container = require('../styles').container;
-var center = require('../styles').center;
-var page = require('../styles').page
 
 var Link = ReactRouter.Link
 var Radium = require('radium');
@@ -17,7 +12,7 @@ require('../main.css');
 var Main = React.createClass({
   render: function () {
     return (
-      <div className='container center-align' style={container}>
+      <div className='container center-align' class='container'>
         <ReactCSSTransitionGroup
           transitionName='appear'
           transitionEnterTimeout={1500}
@@ -25,10 +20,10 @@ var Main = React.createClass({
             {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
         </ReactCSSTransitionGroup>
         <div className='row'>
-          <div style={footer} className='row'>
-              <RadiumLink to='/' style={button} className='four column'>Home</RadiumLink>
-              <RadiumLink to='/list' style={button} className='four column'>List</RadiumLink>
-              <RadiumLink to='/form' style={button} className='four column'>Form</RadiumLink>
+          <div id='menu-footer'>
+              <RadiumLink to='/' className='four column j-button'>Home</RadiumLink>
+              <RadiumLink to='/list' className='four column j-button'>List</RadiumLink>
+              <RadiumLink to='/form' className='four column j-button'>Form</RadiumLink>
           </div>
         </div>
       </div>

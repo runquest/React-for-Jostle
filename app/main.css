@@ -36,10 +36,48 @@ div#listComponent {
   background-color: red;
 }
 
-form#formComponent {
+form.formComponent {
     border: 1px solid #ccc;
     padding: 15px;
     margin: 24px;
     text-align: center;
     width: 100%;
+}
+
+.Btn {
+  border: 0;
+    background-color: #4ba8dc;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 500ms;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+div#menu-footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: #f2f2f2;
+  margin: auto 0;
+  display: flex;
+}
+
+.j-button {
+  background-color: #4ba8dc;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 40%;
+  padding: 15px;
+  color: white;
 }

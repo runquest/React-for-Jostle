@@ -1,7 +1,4 @@
 var React = require('react');
-var pageTitle = require('../styles').pageTitle
-var Btn = require('../styles').Btn
-var InputForm = require('../styles').Input
 require('../main.css');
 
 var FormPage = React.createClass({
@@ -46,7 +43,7 @@ var FormPage = React.createClass({
       <div>
         <h1>Form</h1>
         <ul><li>Field cannot be empty (required).</li><li>Field has to be at least 6 characters long.</li><li>Email validation through regex.</li></ul>
-        <form id='formComponent' onSubmit={this.handleSubmit}>
+        <form className='formComponent' onSubmit={this.handleSubmit}>
         
           <TextInput
             uniqueName="email"
@@ -60,7 +57,7 @@ var FormPage = React.createClass({
             class='emailTextEmail'
               />
      
-          <input type="submit" style={Btn} value="Submit" />
+          <input type="submit" className='Btn' value="Submit" />
         </form>
       </div>
     );
