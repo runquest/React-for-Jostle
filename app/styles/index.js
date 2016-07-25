@@ -3,8 +3,10 @@ var styles = {
     background: 'light-grey',
     height: '100%'
   },
-  page: {
-    paddingBottom: '160px'
+  container: {
+    paddingBottom: '160px',
+    width: '80%',
+    margin: '0 auto'
   },
   footer: {
     position: 'fixed',
