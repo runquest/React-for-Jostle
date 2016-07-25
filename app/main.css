@@ -32,10 +32,6 @@ div#listComponent {
     width: 100%;
 }
 
-.menu:hover {
-  background-color: red;
-}
-
 form.formComponent {
     border: 1px solid #ccc;
     padding: 15px;
@@ -44,19 +40,19 @@ form.formComponent {
     width: 100%;
 }
 
-.Btn {
+.j-button {
   border: 0;
-    background-color: #4ba8dc;
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 500ms;
-    white-space: nowrap;
-    display: inline-block;
-    line-height: 1.5;
-    font-size: 14px;
-    font-weight: 400;
+  background-color: #4ba8dc;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 500ms;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 div#menu-footer {
@@ -70,14 +66,15 @@ div#menu-footer {
   display: flex;
 }
 
-.j-button {
-  background-color: #4ba8dc;
-  width: 100px;
+.menu-btn {
+background-color: #4ba8dc;
+
+  /*  display: block;
+  margin: auto;
+  padding: 15px;
+  color: white;*/
+
   height: 50px;
   text-align: center;
-  display: block;
-  margin: auto;
-  width: 40%;
-  padding: 15px;
-  color: white;
+  display:inline-block;;
 }

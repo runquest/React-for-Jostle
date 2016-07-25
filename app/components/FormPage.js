@@ -57,7 +57,7 @@ var FormPage = React.createClass({
             class='emailTextEmail'
               />
      
-          <input type="submit" className='Btn' value="Submit" />
+          <input type="submit" className='j-button' value="Submit" />
         </form>
       </div>
     );

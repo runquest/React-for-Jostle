@@ -12,20 +12,18 @@ require('../main.css');
 var Main = React.createClass({
   render: function () {
     return (
-      <div className='container center-align' class='container'>
+      <div className='container center-align'>
         <ReactCSSTransitionGroup
           transitionName='appear'
           transitionEnterTimeout={1500}
           transitionLeaveTimeout={1500}>
             {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
         </ReactCSSTransitionGroup>
-        <div className='row'>
-          <div id='menu-footer'>
-              <RadiumLink to='/' className='four column j-button'>Home</RadiumLink>
-              <RadiumLink to='/list' className='four column j-button'>List</RadiumLink>
-              <RadiumLink to='/form' className='four column j-button'>Form</RadiumLink>
+          <div className='row'>
+            <RadiumLink to='/' className="col s12 m4"><p>Home</p></RadiumLink>
+            <RadiumLink to='/list' className="col s12 m4"><p>List</p></RadiumLink>
+            <RadiumLink to='/form' className="col s12 m4"><p>form</p></RadiumLink>
           </div>
-        </div>
       </div>
     )
   }
