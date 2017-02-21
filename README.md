@@ -1,4 +1,6 @@
-# jrproject
+# React for Jostle project
+Goal: build a basic react powered application.
+
 
 To run project:
 
